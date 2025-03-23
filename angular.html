@@ -1,18 +1,18 @@
-<!-- <a href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></a> -->
-
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
 
-<div ng-app="" ng-init="firstName='TE'" ng-controller="student.controller">
+<div ng-app="mainApp" ng-init="firstName='TE'" ng-controller="student.controller">
 
 <p>Input something in the input box:</p>
+<p>using ng-model</p>
 <p>Name: <input type="text" ng-model="firstName"></p>
 <p>You wrote: {{ firstName }}</p>
+<p>using ng-bind</p>
 <p>Name: <input type="text" ng-model="name"></p>
-  <p ng-bind="name"></p>  
- <h1>Student Information</h1>
+  <p ng-bind="name"></p> 
+  <p>using ng-controller</p> 
         Enter First Name: <input type="text" ng-model="student.firstName">
         <br>
         Enter Last Name: <input type="text" ng-model="student.lastName">
