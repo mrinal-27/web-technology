@@ -12,7 +12,12 @@
 <p>You wrote: {{ firstName }}</p>
 <p>Name: <input type="text" ng-model="name"></p>
   <p ng-bind="name"></p>  
-
+ <h1>Student Information</h1>
+        Enter First Name: <input type="text" ng-model="student.firstName">
+        <br>
+        Enter Last Name: <input type="text" ng-model="student.lastName">
+        <br>
+        Your Output: {{student.fullName()}}
 </div>
 
 </body>
