@@ -21,4 +21,16 @@
 </div>
 
 </body>
+<script>
+       angular.module('mainApp', [])
+        .controller('student.controller', function($scope) {
+            $scope.student = {
+                firstName: '',
+                lastName: '',
+                fullName: function() {
+                    return this.firstName + ' ' + this.lastName;
+                }
+            };
+        }); 
+    </script>  
 </html>
